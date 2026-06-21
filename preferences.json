@@ -1,0 +1,19 @@
+[
+  {
+    "property": "zWorkspaceMod.type.selectType",
+    "label": "Workspace Label Type",
+    "type": "dropdown",
+    "placeholder": "Default",
+    "defaultValue": "text",
+    "options": [
+      {
+        "label": "Text",
+        "value": "text"
+      },
+      {
+        "label": "Icon",
+        "value": "icon"
+      }
+    ]
+  }
+]
