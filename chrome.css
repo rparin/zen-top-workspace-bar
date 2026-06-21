@@ -1,16 +1,18 @@
 @media (-moz-pref("zWorkspaceMod.type.selectType", "text")),
   (-moz-pref("zWorkspaceMod.type.selectType", "icon")) {
   #zen-workspaces-button {
-    /*background: black !important;*/
+    background: var(--zWorkspaceMod-bg-bgValue) !important;
 
     /*Only Sidebar*/
     /*Do Nothing*/
 
     /*Sidebar and Top Toolbar*/
+    display: flex !important;
+    flex-direction: row !important;
     position: fixed !important;
     top: 63px !important;
     left: 190px !important;
-    width: 85% !important;
+    width: 86.5% !important;
 
     /*Collapsed Sidebar*/
     /*  display: flex !important;
@@ -19,6 +21,10 @@
   top: 63px !important;
   left: 62px !important;
   width: 95% !important;*/
+
+    @media (-moz-pref("zWorkspaceMod.type.selectType", "icon")) {
+      top: 62px !important;
+    }
   }
 
   #navigator-toolbox {
@@ -55,22 +61,6 @@
     }
   }
 
-  /* Container layout (prevents crowding) */
-  #zen-workspaces-button {
-    display: flex !important;
-    align-items: center;
-
-    /*Icon setting*/
-    @media (-moz-pref("zWorkspaceMod.type.selectType", "icon")) {
-      gap: 30px !important;
-    }
-
-    /*Text setting*/
-    @media (-moz-pref("zWorkspaceMod.type.selectType", "text")) {
-      gap: 5px !important;
-    }
-  }
-
   @media (max-width: 1000px) {
     #zen-workspaces-button {
       justify-content: flex-start !important;
@@ -88,7 +78,6 @@
       width: fit-content !important;
       min-width: unset !important;
       height: auto !important;
-      padding: 0px 50px !important;
       margin: 0 !important;
       white-space: nowrap;
       position: relative;
@@ -126,4 +115,28 @@
     outline: 2px solid rgba(255, 255, 255, 0.35);
     outline-offset: 2px;
   }
+}
+
+/* Container layout (prevents crowding) */
+#zen-workspaces-button {
+  display: flex !important;
+  align-items: center;
+
+  @media (-moz-pref("zWorkspaceMod.align.alignValue", "center")) {
+    justify-content: center !important;
+  }
+
+  @media (-moz-pref("zWorkspaceMod.align.alignValue", "left")) {
+    justify-content: flex-start !important;
+  }
+
+  @media (-moz-pref("zWorkspaceMod.align.alignValue", "right")) {
+    justify-content: flex-end !important;
+  }
+
+  gap: calc(var(--zWorkspaceMod-gap-gapValue) * 1px) !important;
+}
+
+#zen-workspaces-button toolbarbutton.subviewbutton {
+  padding: 0px calc(var(--zWorkspaceMod-padding-padValue) * 1px) !important;
 }

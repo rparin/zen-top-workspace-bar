@@ -15,5 +15,40 @@
         "value": "icon"
       }
     ]
+  },
+  {
+    "property": "zWorkspaceMod.align.alignValue",
+    "label": "Workspace Label Align",
+    "type": "dropdown",
+    "placeholder": "Center",
+    "defaultValue": "center",
+    "options": [
+      {
+        "label": "Left",
+        "value": "left"
+      },
+      {
+        "label": "Right",
+        "value": "right"
+      }
+    ]
+  },
+  {
+    "property": "zWorkspaceMod.bg.bgValue",
+    "label": "Workspace Background (hex) Default: #00000000",
+    "type": "string",
+    "defaultValue": "#00000000"
+  },
+  {
+    "property": "zWorkspaceMod.gap.gapValue",
+    "label": "Gap (px) Default: 5",
+    "type": "string",
+    "defaultValue": "5"
+  },
+  {
+    "property": "zWorkspaceMod.padding.padValue",
+    "label": "Pad (px) Default: 50",
+    "type": "string",
+    "defaultValue": "50"
   }
 ]
