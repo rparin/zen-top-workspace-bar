@@ -100,13 +100,16 @@
     }
 
     /* Replace icon/label with tooltip text */
-    #zen-workspaces-button toolbarbutton.subviewbutton::before {
+    #zen-workspaces-button toolbarbutton.subviewbutton::after {
       content: attr(tooltiptext);
       font-size: 16px;
       white-space: nowrap;
       display: inline-block;
       text-align: center;
-      transform: translate(-50%, 0%);
+      transform: translate(
+        calc(var(--zWorkspaceMod-labelPos-posXValue) * 1%),
+        calc(var(--zWorkspaceMod-labelPos-posYValue) * 1%)
+      );
     }
 
     /* Hover = bold text only (inactive items only) */

@@ -46,6 +46,18 @@
     "defaultValue": "50"
   },
   {
+    "property": "zWorkspaceMod.labelPos.posXValue",
+    "label": "Label Position X (%) Default: -50",
+    "type": "string",
+    "defaultValue": "-50"
+  },
+  {
+    "property": "zWorkspaceMod.labelPos.posYValue",
+    "label": "Label Position Y (%) Default: 0",
+    "type": "string",
+    "defaultValue": "0"
+  },
+  {
     "property": "zWorkspaceMod.bg.bgValue",
     "label": "Workspace Background (hex) Default: #00000000",
     "type": "string",
