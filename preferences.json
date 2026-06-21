@@ -40,6 +40,18 @@
     "defaultValue": "#00000000"
   },
   {
+    "property": "zWorkspaceMod.fade.fadeValue",
+    "label": "Workspace Background Fade Width (%) Default: 20",
+    "type": "string",
+    "defaultValue": "20"
+  },
+  {
+    "property": "zWorkspaceMod.angle.angleValue",
+    "label": "Workspace Background Fade Angle (deg) Default: 90",
+    "type": "string",
+    "defaultValue": "90"
+  },
+  {
     "property": "zWorkspaceMod.gap.gapValue",
     "label": "Gap (px) Default: 5",
     "type": "string",

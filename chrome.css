@@ -3,27 +3,43 @@
   #zen-workspaces-button {
     background: var(--zWorkspaceMod-bg-bgValue) !important;
 
+    mask: linear-gradient(
+      calc(var(--zWorkspaceMod-angle-angleValue) * 1deg),
+      transparent,
+      white calc(var(--zWorkspaceMod-fade-fadeValue) * 1%),
+      white calc((100 - var(--zWorkspaceMod-fade-fadeValue)) * 1%),
+      transparent
+    ) !important;
+
     /*Only Sidebar*/
     /*Do Nothing*/
 
-    /*Sidebar and Top Toolbar*/
-    display: flex !important;
-    flex-direction: row !important;
-    position: fixed !important;
-    top: 63px !important;
-    left: 190px !important;
-    width: 86.5% !important;
-
-    /*Collapsed Sidebar*/
-    /*  display: flex !important;
-  flex-direction: row !important;
-  position: fixed !important;
-  top: 63px !important;
-  left: 62px !important;
-  width: 95% !important;*/
-
     @media (-moz-pref("zWorkspaceMod.type.selectType", "icon")) {
       top: 62px !important;
+    }
+  }
+
+  /*Sidebar and Top Toolbar*/
+  :root:not([zen-single-toolbar]) {
+    #zen-workspaces-button {
+      display: flex !important;
+      flex-direction: row !important;
+      position: fixed !important;
+      top: 63px !important;
+      left: 190px !important;
+      width: 86.5% !important;
+    }
+  }
+
+  /*Collapsed Sidebar*/
+  :root:not([zen-sidebar-expanded]):not([zen-single-toolbar]) {
+    #zen-workspaces-button {
+      display: flex !important;
+      flex-direction: row !important;
+      position: fixed !important;
+      top: 63px !important;
+      left: 62px !important;
+      width: 95% !important;
     }
   }
 
