@@ -1,7 +1,7 @@
 [
   {
     "property": "zWorkspaceMod.type.selectType",
-    "label": "Workspace Label Type",
+    "label": "Label Type",
     "type": "dropdown",
     "placeholder": "Default",
     "defaultValue": "text",
@@ -18,7 +18,7 @@
   },
   {
     "property": "zWorkspaceMod.bar.alignValue",
-    "label": "Workspace Label Align",
+    "label": "Label Align",
     "type": "dropdown",
     "placeholder": "Center",
     "defaultValue": "center",
@@ -32,6 +32,24 @@
         "value": "right"
       }
     ]
+  },
+  {
+    "property": "zWorkspaceMod.style.fontValue",
+    "label": "Font Size (px) Default: 16",
+    "type": "string",
+    "defaultValue": "16"
+  },
+  {
+    "property": "zWorkspaceMod.style.fontColor",
+    "label": "Font Color (hex) Default: #ffffff",
+    "type": "string",
+    "defaultValue": "#ffffff"
+  },
+  {
+    "property": "zWorkspaceMod.style.selectedBg",
+    "label": "Selected Background (hex) Default: #ffffff2e",
+    "type": "string",
+    "defaultValue": "#ffffff2e"
   },
   {
     "property": "zWorkspaceMod.bar.gapValue",
