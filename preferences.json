@@ -17,7 +17,7 @@
     ]
   },
   {
-    "property": "zWorkspaceMod.align.alignValue",
+    "property": "zWorkspaceMod.bar.alignValue",
     "label": "Workspace Label Align",
     "type": "dropdown",
     "placeholder": "Center",
@@ -34,33 +34,33 @@
     ]
   },
   {
+    "property": "zWorkspaceMod.bar.gapValue",
+    "label": "Gap (px) Default: 5",
+    "type": "string",
+    "defaultValue": "5"
+  },
+  {
+    "property": "zWorkspaceMod.button.padValue",
+    "label": "Pad (px) Default: 50",
+    "type": "string",
+    "defaultValue": "50"
+  },
+  {
     "property": "zWorkspaceMod.bg.bgValue",
     "label": "Workspace Background (hex) Default: #00000000",
     "type": "string",
     "defaultValue": "#00000000"
   },
   {
-    "property": "zWorkspaceMod.fade.fadeValue",
+    "property": "zWorkspaceMod.bg.fadeValue",
     "label": "Workspace Background Fade Width (%) Default: 20",
     "type": "string",
     "defaultValue": "20"
   },
   {
-    "property": "zWorkspaceMod.angle.angleValue",
+    "property": "zWorkspaceMod.bg.angleValue",
     "label": "Workspace Background Fade Angle (deg) Default: 90",
     "type": "string",
     "defaultValue": "90"
-  },
-  {
-    "property": "zWorkspaceMod.gap.gapValue",
-    "label": "Gap (px) Default: 5",
-    "type": "string",
-    "defaultValue": "5"
-  },
-  {
-    "property": "zWorkspaceMod.padding.padValue",
-    "label": "Pad (px) Default: 50",
-    "type": "string",
-    "defaultValue": "50"
   }
 ]

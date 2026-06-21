@@ -4,10 +4,10 @@
     background: var(--zWorkspaceMod-bg-bgValue) !important;
 
     mask: linear-gradient(
-      calc(var(--zWorkspaceMod-angle-angleValue) * 1deg),
+      calc(var(--zWorkspaceMod-bg-angleValue) * 1deg),
       transparent,
-      white calc(var(--zWorkspaceMod-fade-fadeValue) * 1%),
-      white calc((100 - var(--zWorkspaceMod-fade-fadeValue)) * 1%),
+      white calc(var(--zWorkspaceMod-bg-fadeValue) * 1%),
+      white calc((100 - var(--zWorkspaceMod-bg-fadeValue)) * 1%),
       transparent
     ) !important;
 
@@ -106,7 +106,7 @@
       white-space: nowrap;
       display: inline-block;
       text-align: center;
-      transform: translate(-50%, 10%);
+      transform: translate(-50%, 0%);
     }
 
     /* Hover = bold text only (inactive items only) */
@@ -138,21 +138,21 @@
   display: flex !important;
   align-items: center;
 
-  @media (-moz-pref("zWorkspaceMod.align.alignValue", "center")) {
+  @media (-moz-pref("zWorkspaceMod.bar.alignValue", "center")) {
     justify-content: center !important;
   }
 
-  @media (-moz-pref("zWorkspaceMod.align.alignValue", "left")) {
+  @media (-moz-pref("zWorkspaceMod.bar.alignValue", "left")) {
     justify-content: flex-start !important;
   }
 
-  @media (-moz-pref("zWorkspaceMod.align.alignValue", "right")) {
+  @media (-moz-pref("zWorkspaceMod.bar.alignValue", "right")) {
     justify-content: flex-end !important;
   }
 
-  gap: calc(var(--zWorkspaceMod-gap-gapValue) * 1px) !important;
+  gap: calc(var(--zWorkspaceMod-bar-gapValue) * 1px) !important;
 }
 
 #zen-workspaces-button toolbarbutton.subviewbutton {
-  padding: 0px calc(var(--zWorkspaceMod-padding-padValue) * 1px) !important;
+  padding: 0px calc(var(--zWorkspaceMod-button-padValue) * 1px) !important;
 }
