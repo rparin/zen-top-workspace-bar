@@ -43,12 +43,14 @@
       display: flex !important;
       flex-direction: row !important;
       position: fixed !important;
-      top: 63px !important;
+      top: calc(var(--zWorkspaceMod-labelPos-topValue) * 1px) !important;
       left: 190px !important;
       width: 86.5% !important;
 
       @media (-moz-pref("zWorkspaceMod.type.selectType", "icon")) {
-        top: 62px !important;
+        top: calc(
+          var(--zWorkspaceMod-labelPos-topValue) * 1px - 1px
+        ) !important;
       }
     }
   }
@@ -64,12 +66,14 @@
       display: flex !important;
       flex-direction: row !important;
       position: fixed !important;
-      top: 63px !important;
+      top: calc(var(--zWorkspaceMod-labelPos-topValue) * 1px) !important;
       left: 62px !important;
       width: 95% !important;
 
       @media (-moz-pref("zWorkspaceMod.type.selectType", "icon")) {
-        top: 62px !important;
+        top: calc(
+          var(--zWorkspaceMod-labelPos-topValue) * 1px - 1px
+        ) !important;
       }
     }
   }

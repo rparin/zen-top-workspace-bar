@@ -64,6 +64,12 @@
     "defaultValue": "50"
   },
   {
+    "property": "zWorkspaceMod.labelPos.topValue",
+    "label": "Top (px) Default: 63",
+    "type": "string",
+    "defaultValue": "63"
+  },
+  {
     "property": "zWorkspaceMod.labelPos.posXValue",
     "label": "Label Position X (%) Default: -50",
     "type": "string",
