@@ -21,11 +21,21 @@
       /*Icon setting*/
       @media (-moz-pref("zWorkspaceMod.type.selectType", "icon")) {
         margin-top: 25px !important;
+
+        /* Normal + F11 fullscreen */
+        :root:not([inDOMFullscreen]) #zen-tabbox-wrapper {
+          margin-top: 22px !important;
+        }
       }
 
       /*Text Setting*/
       @media (-moz-pref("zWorkspaceMod.type.selectType", "text")) {
         margin-top: 22px !important;
+
+        /* Normal + F11 fullscreen */
+        :root:not([inDOMFullscreen]) #zen-tabbox-wrapper {
+          margin-top: 22px !important;
+        }
       }
     }
 
@@ -41,6 +51,11 @@
         top: 62px !important;
       }
     }
+  }
+
+  /* Video/DOM fullscreen */
+  :root[inDOMFullscreen] #zen-tabbox-wrapper {
+    margin-top: 0 !important;
   }
 
   /*Collapsed Sidebar*/
