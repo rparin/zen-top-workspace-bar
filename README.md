@@ -14,7 +14,11 @@ A Zen Browser mod that moves the workspace toolbar to the top
 
 ## About
 
+<div align="center">
+
 <img max-height=350 alt="demo of Zen Top Workspace Bar Mod" src="https://raw.githubusercontent.com/rparin/zen-top-workspace-bar/main/Demo.png">
+
+</div>
 
 ### Features
 
