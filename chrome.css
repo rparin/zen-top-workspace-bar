@@ -164,7 +164,7 @@
   }
 
   /*Show workspace icons when Compact Mode On*/
-  :root[zen-compact-mode="true"] zen-workspace-icons {
+  :root[zen-compact-mode="true"]:not([inFullscreen]) zen-workspace-icons {
     visibility: visible !important;
   }
 
