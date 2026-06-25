@@ -156,6 +156,24 @@
     outline: 2px solid rgba(255, 255, 255, 0.35);
     outline-offset: 2px;
   }
+
+  /*Compact Mode Toolbar Padding*/
+  #zen-toggle-compact-mode toolbarbutton {
+    padding: 0 calc(var(--zWorkspaceMod-toolbar-compactModePaddingValue) * 1px) !important;
+  }
+
+  /*Show workspace icons when Compact Mode On*/
+  :root[zen-compact-mode="true"] zen-workspace-icons {
+    visibility: visible !important;
+  }
+
+  /*Placement of workspace when compact mode on*/
+  :root[zen-compact-mode="true"] {
+    #zen-workspaces-button {
+      left: 10px !important;
+      width: 100% !important;
+    }
+  }
 }
 
 /* Container layout (prevents crowding) */

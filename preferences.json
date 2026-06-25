@@ -98,5 +98,11 @@
     "label": "Workspace Background Fade Angle (deg) Default: 90",
     "type": "string",
     "defaultValue": "90"
+  },
+  {
+    "property": "zWorkspaceMod.toolbar.compactModePaddingValue",
+    "label": "Toolbar Compact Mode Padding (px) Default: 0",
+    "type": "string",
+    "defaultValue": "0"
   }
 ]
