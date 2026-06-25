@@ -78,7 +78,8 @@
     }
   }
 
-  #navigator-toolbox {
+  #navigator-toolbox,
+  #zen-workspaces-button {
     z-index: 999 !important;
   }
 
